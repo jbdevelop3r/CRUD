@@ -1,0 +1,114 @@
+// Place all the styles related to the musics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.index-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 700px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music {
+  color: #F4EAE6;
+  font-size: 50px;
+}
+
+//647c90
+//e2ded0
+//4e4f50
+//746c70
+
+.album {
+  background-color: #647c90;
+  width: 500px;
+  height: 130px;
+  margin-bottom: 10px;
+  border: 2px solid #e2ded0;
+  border-radius: 10px;
+}
+
+.comp-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.index-composer {
+  margin-top: 15px;
+  background-color: #F4EAE6;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.edit-music {
+  text-decoration: none;
+  background-color: #746c70;
+  padding: 2px 2px;
+  border-radius: 5px;
+  color: #ffff;
+  width: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-music:hover {
+    color: #fff;
+    transform: scale(1.03);
+    outline: 1px solid white;
+}
+
+.composer {
+    color: red;
+}
+
+.add-music {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #746c70;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.add-music:hover {
+  color: white;
+  transform: scale(1.03);
+  outline: 1px solid white;
+}
+
+.index-song {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-title {
+  background-color: #F4EAE6;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: black;
+  font-size: 20px;
+}
+
+// .index-song {
+//     animation: blinker 1s linear infinite;
+//   }
+  
+//   @keyframes blinker {
+//     50% {
+//       opacity: 0;
+//     }
+//   }

@@ -1,0 +1,30 @@
+<header class="index-head">
+    <h1 class="music">Musics</h1> 
+    <%= link_to "Add music", new_music_path, :class => "add-music" %>
+</header>
+
+
+<div class="music-container">
+<div class="">
+    <div>
+        <% @musics.each do |music |%> 
+            <div class="album">
+                <div class="comp-edit"> 
+                    <p class="index-composer"> Composer: <%=music.composer%> </p>
+                    <%= link_to "show", music, :class => "edit-music" %>
+                </div> 
+                    <div class="index-song"> 
+                        <p class="song-title"> 
+                        Song:
+                        <%=music.song%> 
+                        </p>
+                    </div>
+            </div>
+        <% end %> 
+    </div>
+</div>
+
+</div>
+
+
+

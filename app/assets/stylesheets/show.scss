@@ -1,0 +1,71 @@
+.show-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.show-name-comp {
+    padding-top: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px; 
+    border: 2px solid #e2ded0;
+    border-radius: 10px; 
+    background-color: #647c90;
+}
+
+.show-composer, .show-song {
+    color: black;
+    background-color: #F4EAE6;
+    padding: 5px 40px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-size: 40px;
+}
+
+.show-controls {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.show-cont-1, .show-cont-2, .show-cont-3 {
+    text-decoration: none;
+    background-color: #746c70;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #ffff;
+    width: 100px;
+    text-align: center;
+}
+
+.show-cont-1:hover, .show-cont-2:hover, .show-cont-3:hover {
+    color: #ffff;
+    outline: 1px solid white;
+    transform: scale(1.02);
+}
+
+.comp-edit i {
+    color: #ffff;
+    text-decoration: none;
+}
+// .show-composer, .show-song{
+//     animation: blinker 1.5s linear infinite;
+//   }
+  
+//   @keyframes blinker {
+//     50% {
+//       opacity: 0;
+//     }
+//   }
+
+

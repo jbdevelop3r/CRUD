@@ -1,0 +1,55 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form-composer, .form-song {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.text-composer, .text-song {
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.form-controllers {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-home {
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #746c70;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #ffff;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submit:hover {
+    transform: scale(1.1);
+}
+
+.form-home:hover {
+    color: #ffff;
+    transform: scale(1.02);
+    outline: 1px solid white;
+}
+

@@ -1,0 +1,12 @@
+<div class="show-container">
+  <div class="show-name-comp">
+    <p class="show-composer">Composer: <%= @music.composer %></p>
+    <p class="show-song">Song: <%= @music.song %></p>
+  </div>
+
+  <div class="show-controls">
+    <%= link_to "Edit", edit_music_path(@music), :class => "show-cont-1" %>
+    <%= link_to "Delete", @music, method: :delete, :class => "show-cont-1"%>
+    <%= link_to "Home", musics_path, :class => "show-cont-1" %>
+  </div>
+</div>

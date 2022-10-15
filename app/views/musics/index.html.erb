@@ -1,5 +1,5 @@
 <header class="index-head">
-    <h1 class="music">Musics</h1> 
+    <i class="fa-spin"><h1 class="music">Musics</h1></i>
     <%= link_to "Add music", new_music_path, :class => "add-music" %>
 </header>
 
@@ -11,7 +11,7 @@
             <div class="album">
                 <div class="comp-edit"> 
                     <p class="index-composer"> Composer: <%=music.composer%> </p>
-                    <%= link_to "show", music, :class => "edit-music" %>
+                    <%= link_to "SHOW", music, :class => "edit-music" %>
                 </div> 
                     <div class="index-song"> 
                         <p class="song-title"> 

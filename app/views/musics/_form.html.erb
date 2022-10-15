@@ -5,15 +5,15 @@
     <%= form.label :composer, :class => "form-composer" %><br>
     <%= form.text_field :composer, :class => "text-composer" %>
     <% music.errors.full_messages_for(:composer).each do |message| %>
-        <div> <%= message %> </div>
+        <div class="errors"> <%= message %> </div>
     <% end%>
   </div>
 
   <div>
     <%= form.label :song, :class => "form-song" %><br>
     <%= form.text_field :song, :class => "text-song" %>
-    <% music.errors.full_messages_for(:composer).each do |message| %>
-        <div> <%= message %> </div>
+    <% music.errors.full_messages_for(:song).each do |message| %>
+        <div class="errors"> <%= message %> </div> 
     <% end%>
   </div>
 

@@ -26,7 +26,7 @@ class MusicsController < ApplicationController
         if @music.update(music_params)
             redirect_to @music
           else
-            render :edit, status: :unprocessable_entity
+            render :edit, status: :unprocessable_entity  
           end
     end
 
@@ -36,6 +36,9 @@ class MusicsController < ApplicationController
     
         redirect_to root_path, status: :see_other, notice: "Deleted!"
       end
+
+    def about 
+    end
 
     private 
     def music_params

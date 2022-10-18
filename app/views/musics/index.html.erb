@@ -6,12 +6,13 @@
 
 <div class="music-container">
 <div class="">
+
     <div>
         <% @musics.each do |music |%> 
             <div class="album">
                 <div class="comp-edit"> 
                     <p class="index-composer"> Composer: <%=music.composer%> </p>
-                    <%= link_to "SHOW", music, :class => "edit-music" %>
+                    <%= link_to "SHOW MUSIC", music, :class => "edit-music" %>
                 </div> 
                     <div class="index-song"> 
                         <p class="song-title"> 

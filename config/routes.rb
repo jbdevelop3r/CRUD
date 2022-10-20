@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "musics/about"
   get "musics/header"
 
-  resources :musics
-  
+  resources :musics do 
+    resources :comments
+  end
 end

@@ -10,3 +10,10 @@
     <%= link_to "Home", musics_path, :class => "show-cont-1" %>
   </div>
 </div>
+
+<h2>Comments</h2>
+<%= render @music.comments %>
+
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>

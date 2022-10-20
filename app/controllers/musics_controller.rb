@@ -1,6 +1,9 @@
 class MusicsController < ApplicationController
+
+  before_action :authenticate_user!
+
     def index
-        @musics = Music.all 
+        @musics = current_user.musics
     end
     def show
         @music = Music.find(params[:id])
@@ -9,7 +12,7 @@ class MusicsController < ApplicationController
         @music = Music.new
     end
     def create
-        @music = Music.new(music_params)
+        @music = current_user.musics.build(music_params)
 
         if @music.save
       redirect_to root_path

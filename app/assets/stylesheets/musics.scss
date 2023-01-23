@@ -29,7 +29,7 @@
 //746c70
 
 .album {
-  background-color: #647c90;
+  background-color: #B7B78A;
   width: 500px;
   height: 150px;
   margin-bottom: 10px;
@@ -46,18 +46,19 @@
 
 .index-composer {
   margin-top: 15px;
-  background-color: #F4EAE6;
+  background-color: #658864;
   padding: 3px 8px;
   border-radius: 3px;
   font-size: 20px;
+  color: white;
 }
 
 .edit-music {
   text-decoration: none;
-  background-color: #746c70;
+  background-color: #DDDDDD;
   padding: 2px 2px;
   border-radius: 5px;
-  color: #ffff;
+  color: black;
   width: 70px;
   text-align: center;
   display: flex;
@@ -66,7 +67,7 @@
 }
 
 .edit-music:hover {
-    color: #fff;
+    color: black;
     transform: scale(1.03);
     outline: 1px solid white;
 }
@@ -97,10 +98,10 @@
 }
 
 .song-title {
-  background-color: #F4EAE6;
+  background-color: #658864;
   padding: 3px 8px;
   border-radius: 3px;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 

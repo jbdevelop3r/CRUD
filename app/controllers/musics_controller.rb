@@ -12,7 +12,7 @@ class MusicsController < ApplicationController
         @music = Music.new(music_params)
 
         if @music.save
-      redirect_to root_path
+      redirect_to musics_path
         else
       render :new, status: :unprocessable_entity
         end
@@ -34,7 +34,7 @@ class MusicsController < ApplicationController
         @music = Music.find(params[:id])
         @music.destroy
     
-        redirect_to root_path, status: :see_other, notice: "Deleted!"
+        redirect_to musics_path, status: :see_other, notice: "Deleted!"
       end
 
     private 

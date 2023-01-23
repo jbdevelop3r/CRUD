@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #658864;">
+  <div class="container-fluid">
+    <div>
+      <a class="navbar-brand" href="#">Musically</a>
+    </div>
+    <div>
+      <% if user_signed_in? %>
+      <div style="background-color: #B7B78A;">
+          <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class:"nav-link text-dark", id: "logout" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</nav>

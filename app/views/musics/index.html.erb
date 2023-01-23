@@ -1,5 +1,5 @@
 <header class="index-head">
-    <i class="fa-spin"><h1 class="music">Musics</h1></i>
+    <i class=""><h1 class="music text-dark">Musics</h1></i>
     <%= link_to "Add music", new_music_path, :class => "add-music" %>
 </header>
 
@@ -7,7 +7,8 @@
 <div class="music-container">
 <div class="">
     <div>
-        <% @musics.each do |music |%> 
+    <% if @musics.length > 0 %>
+        <% @musics.each do |music |%>
             <div class="album">
                 <div class="comp-edit"> 
                     <p class="index-composer"> Composer: <%=music.composer%> </p>
@@ -20,7 +21,10 @@
                         </p>
                     </div>
             </div>
-        <% end %> 
+            <% end %> 
+        <% else %>
+            No music available.
+    <% end %>
     </div>
 </div>
 
